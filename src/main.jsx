@@ -8,7 +8,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <div className="layout">
       <div className="navigation"></div>
       <div className="content">
-        <h1>Payments</h1>
+        <div className="content-header">
+          <h1>Payments</h1>
+        </div>
         <App />
       </div>
     </div>

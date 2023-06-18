@@ -2,6 +2,8 @@
 @import "../node_modules/ag-grid-community/src/styles/ag-theme-material/sass/ag-theme-material-mixin";
 
 .ag-theme-custom {
+  margin: 0 32px;
+
   @include ag-theme-material((font-family: Inter,
       font-size: 14px,
 

@@ -11,12 +11,14 @@ body,
   width: 100%;
   margin: 0px;
   font-family: 'Inter';
+  
 }
 
 .layout {
   height: 100%;
   width: 100%;
   display: flex;
+  overflow: hidden;
 }
 
 .navigation {
@@ -24,15 +26,17 @@ body,
   height: calc(100vh - 16px);
   width: 280px;
   border-radius: 8px;
-  margin: 8px;
+  margin: 8px 0 8px 8px;
 }
 
 .content {
   width: 100%;
-  margin-left: 24px;
-  margin-right: 32px;
   display: flex;
   flex-direction: column;
+}
+
+.content-header{
+  margin: 0 32px;
 }
 
 h1 {
