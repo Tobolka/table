@@ -2,18 +2,8 @@
 @import "../node_modules/ag-grid-community/src/styles/ag-theme-material/sass/ag-theme-material-mixin";
 
 .ag-theme-custom {
+  @include ag-theme-material((font-family: Inter,
+      font-size: 14px,
 
-
-  
-  @include ag-theme-material(
-    (
-    
-    font-family: Inter,
-    font-size: 14px,
-     
-    )
-  );
-
-  
-  
+    ));
 }
