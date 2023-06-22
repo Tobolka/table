@@ -7,17 +7,25 @@
   @include ag-theme-material((font-family: ('Inter', sans-serif),
       font-size: 14px,
       line-height: 140%,
+      font-weight: 400,
       letter-spacing: -0.09px,
       row-hover-color: #FAFAFA,
       border-color: #E5E5E5,
       cell-horizontal-padding: 0,
       data-color: #171717,
       header-foreground-color:#737373,
+
     ));
 
   .ag-header-cell-text {
     font-weight: 400;
     line-height: 140%;
     letter-spacing: -0.09px;
+  }
+
+  .ag-row .ag-cell {
+    display: flex;
+    justify-content: left;
+    align-items: center;
   }
 }
