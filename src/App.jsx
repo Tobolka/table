@@ -5,19 +5,15 @@ import "./theme.scss";
 
 const generateColumnDefs = () => [
   {
-    headerName: "Country",
-    field: "country",
+    headerName: "Owner",
+    field: "owner",
     enableRowGroup: false,
- 
-    width: 200,
     rowDrag: false,
   },
   ..."ABCE"
     .split("")
     .map((letter) => ({ field: letter })),
 ];
-
-
 
 const generateRowData = (columnDefs) => {
   const rowData = [];
@@ -34,7 +30,7 @@ const generateRowData = (columnDefs) => {
   for (var i = 0; i < 100; i++) {
     var item = {};
 
-    item.country = countries[i % countries.length];
+    item.owner = countries[i % countries.length];
 
     for (var j = 1; j < columnDefs.length; j++) {
       var colDef = columnDefs[j];
@@ -50,19 +46,16 @@ const columnDefs = generateColumnDefs();
 const rowData = generateRowData(columnDefs);
 const gridOptions = {
   suppressMenuHide: true,
-sortable:true,
+  sortable:true,
   animateRows: false,
   enableRangeSelection: false,
   rowDragManaged: true,
   headerHeight: 56,
   rowHeight: 56,
-  rowGroupPanelShow: "always",
-  pivotPanelShow: "always",
-  pivotColumnGroupTotals: "before",
-  pivotRowTotals: "before",
   columnDefs,
   rowData,
   enableFillHandle: true,
+  autoSizeAllColumns: true,
 };
 const App = () => {
   return (
