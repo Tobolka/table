@@ -10,8 +10,7 @@ body,
   height: 100%;
   width: 100%;
   margin: 0px;
-  font-family: 'Inter';
-  
+  font-family: 'Inter', sans-serif;
 }
 
 .layout {
@@ -35,7 +34,7 @@ body,
   flex-direction: column;
 }
 
-.content-header{
+.content-header {
   margin: 0 32px;
 }
 
